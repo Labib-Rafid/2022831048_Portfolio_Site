@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    background-color: #dfbabf;
+}
+header{
+    background-color: #d777ba;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a{
+    color: rgb(59, 4, 4); 
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #f1c40f; 
+}
+
+#headTag{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cursor::after {
+    content: "|";
+    margin-left: 5px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* ... */
+.intro {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.name {
+    font-size: 32px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
