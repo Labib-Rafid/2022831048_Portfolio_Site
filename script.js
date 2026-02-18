@@ -63,3 +63,53 @@ function typeWriter() {
     }
 }
 
+
+
+// ......
+
+function showSkills(type) {
+    const container = document.getElementById("skills-container");
+    container.innerHTML = "";
+
+    let skills = [];
+
+    if (type === "programming") {
+        skills = [
+            { name: "C++", level: 90 },
+            { name: "C", level: 90 },
+            { name: "Java", level: 70 }
+        ];
+    } 
+    else if (type === "frontend") {
+        skills = [
+            { name: "HTML", level: 80 },
+            { name: "CSS", level: 50 },
+            { name: "JavaScript", level: 60 }
+        ];
+    } 
+    else if (type === "backend") {
+        skills = [
+            { name: "MySQL", level: 75 },
+            { name: "Node.js", level: 60 },
+            { name: "DBMS", level: 80 }
+        ];
+    }
+
+    skills.forEach(skill => {
+        const skillDiv = document.createElement("div");
+        skillDiv.classList.add("skill");
+
+        skillDiv.innerHTML = `
+            <div class="skill-name">${skill.name} - ${skill.level}%</div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        `;
+
+        container.appendChild(skillDiv);
+
+        setTimeout(() => {
+            skillDiv.querySelector(".progress").style.width = skill.level + "%";
+        }, 100);
+    });
+}

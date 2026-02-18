@@ -12,12 +12,22 @@
 
 <body>
     <header>
-        <nav>
-            <a href = "index.html">Home</a>
-            <a href = "#about">About</a>
-            <a href = "#education">Education</a>
-            <a href = "#projects">Projects</a>
-        </nav>
+        <nav class="navbar">
+        <div class="nav-left">
+            <span class="nav-name">Labib_Rafid</span>
+        </div>
+
+        <div class="nav-center">
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+        </div>
+
+        <div class="nav-right">
+            <a href="#contact">Contact Me</a>
+        </div>
+    </nav>
     </header>
 
     <div class = "main-container">
@@ -33,7 +43,23 @@
         <div class = "home-right-img">
             <img src="fb_dp_labib.jpg" alt="Profile Image">
         </div>
+        <div class="social-links">
+            <a href="https://github.com/Labib-Rafid" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/md-labib-rafid-majumder-b8a35630a/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/md.labib.rafid.majumder" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://instagram.com/YOUR_INSTAGRAM_USERNAME" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
     </div>
+
     <section id = "about" class = "all-class">
         <h2 class = "header-tags">About Me</h2>
         <div class = "all-underline"></div>
@@ -94,7 +120,7 @@
     </div>
 </section>
 
-<section id="skills" class="all-class">
+<!-- <section id="skills" class="all-class">
     <h2 class="header-tags">Technical Skills</h2>
     <div class="all-underline"></div>
 
@@ -109,7 +135,23 @@
         <p><strong>Tools & Version Control:</strong> Git, GitHub, VS Code</p>
 
     </div>
+</section> -->
+
+<section id="skills" class="all-class">
+    <h2 class="header-tags">Skills</h2>
+    <div class="all-underline"></div>
+
+    <div class="skill-buttons">
+        <button onclick="showSkills('programming')">Programming Languages</button>
+        <button onclick="showSkills('frontend')">Frontend</button>
+        <button onclick="showSkills('backend')">Backend / DBMS</button>
+    </div>
+
+    <div id="skills-container" class="skills-container"></div>
 </section>
+
+
+
 
 <section id="problem-solving" class="all-class">
     <h2 class="header-tags">Problem Solving Journey</h2>
