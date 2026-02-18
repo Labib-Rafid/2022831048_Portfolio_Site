@@ -31,7 +31,6 @@ const speed = 50;
 window.onload = () => {
     const container = document.getElementById("headTag");
 
-    // Create elements for each line
     lines.forEach((_, index) => {
         const div = document.createElement("div");
 
@@ -58,14 +57,14 @@ function typeWriter() {
         charIndex = 0;
 
         if (lineIndex < lines.length) {
-            setTimeout(typeWriter, 300); // small pause between lines
+            setTimeout(typeWriter, 300);
         }
     }
 }
 
 
 
-// ......
+// ShowSkills Part
 
 function showSkills(type) {
     const container = document.getElementById("skills-container");
@@ -90,8 +89,7 @@ function showSkills(type) {
     else if (type === "backend") {
         skills = [
             { name: "MySQL", level: 75 },
-            { name: "Node.js", level: 60 },
-            { name: "DBMS", level: 80 }
+            { name: "Node.js", level: 30 }
         ];
     }
 
